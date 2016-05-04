@@ -1,0 +1,71 @@
+" Compatibility for Debian
+runtime! fedora.vim
+
+" Vundle (plugin manager) configuration
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'SuperTab'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'taglist.vim'
+Plugin 'nvie/vim-flake8'
+Plugin 'jiangmiao/auto-pairs'
+
+
+call vundle#end()
+filetype plugin indent on
+syntax on
+
+" Set 256-color compatibilty
+set t_Co=256
+
+" Keyboard binds
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+inoremap jk <ESC>
+
+map <F2> :NERDTreeToggle<CR>
+map <F3> :TlistToggle<CR>
+map <F4> :Errors<CR><C-w><C-w>
+
+" Fix backspace
+set backspace=2
+
+" Layout configuration
+set number
+set relativenumber
+set showcmd
+set cmdheight=2
+set showmatch
+set scrolloff=10
+
+set laststatus=2
+set noshowmode
+
+autocmd FileType python setlocal completeopt-=preview
+
+" Search settings
+set incsearch
+set hlsearch
+
+" Disable mouse
+set mouse=
+
+" Disable welcome message
+set shortmess+=I
+
+" Set vim-airline theme
+let g:airline_theme = 'airlineish'
