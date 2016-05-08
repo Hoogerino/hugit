@@ -67,8 +67,9 @@ set mouse=
 " Disable welcome message
 set shortmess+=I
 
-" Set vim-airline theme
+" airline settings
 let g:airline_theme = 'airlineish'
+let g:airline#extensions#whitespace#checks = [ 'trailing'  ]
 
 " taglist settings
 let Tlist_Compact_Format = 1
