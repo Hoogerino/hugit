@@ -163,7 +163,7 @@ client.unfocused $bg-color $bg-color $inactive-text-color $bg-color
 client.focused_inactive $bg-color $bg-color $inactive-text-color $bg-color
 client.urgent $urgent-bg-color $urgent-bg-color $text-color $urgent-bg-color
 
-hide_edge_border none
+hide_edge_borders none
 smart_borders on
 
 # Start i3bar to display a workspace bar (plus the system information i3status
