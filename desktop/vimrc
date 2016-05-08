@@ -1,5 +1,5 @@
 " Compatibility for Debian
-runtime! fedora.vim
+runtime! archlinux.vim
 
 " Vundle (plugin manager) configuration
 set nocompatible
@@ -69,3 +69,8 @@ set shortmess+=I
 
 " Set vim-airline theme
 let g:airline_theme = 'airlineish'
+
+" taglist settings
+let Tlist_Compact_Format = 1
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Close_On_Select = 1
